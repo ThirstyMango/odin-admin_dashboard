@@ -26,6 +26,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Reseting anchor link to default color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* 6. Improve media defaults */
 img,
 picture,
@@ -36,12 +48,22 @@ svg {
   max-width: 100%;
 }
 
+/* Make all black svgs white */
+.white-filter {
+  filter: invert(98%) sepia(0%) saturate(7491%) hue-rotate(56deg)
+    brightness(107%) contrast(102%);
+}
+
 /* 7. Inherit fonts for form controls */
 input,
 button,
 textarea,
 select {
   font: inherit;
+}
+
+a:focus {
+  outline: none;
 }
 
 /* 8. Avoid text overflows */

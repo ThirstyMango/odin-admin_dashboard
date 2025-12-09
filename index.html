@@ -6,6 +6,164 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./styles/boilerplate.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
   </head>
-  <body></body>
+  <style>
+    @font-face {
+      font-family: InterVariable;
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url("./fonts/InterVariable.woff2") format("woff2");
+    }
+    body {
+      font-family: InterVariable Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <body>
+    <main class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <img
+            src="./imgs/icons/view-dashboard.svg"
+            alt=""
+            class="sidebar__header-logo white-filter"
+          />
+          <h1 class="sidebar__header-text">Dashboard</h1>
+        </div>
+
+        <nav class="sidebar__nav">
+          <ul class="nav__section">
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/home.svg"
+                alt="home-svg"
+              />
+              <a class="nav__item-link" href="">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/account.svg"
+                alt="profile-svg"
+              />
+              <a class="nav__item-link" href="">Profile</a>
+            </li>
+
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/message.svg"
+                alt="messages-svg"
+              />
+              <a class="nav__item-link" href="">Messages</a>
+            </li>
+
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/history.svg"
+                alt="history-svg"
+              />
+              <a class="nav__item-link" href="">History</a>
+            </li>
+
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/file-tree.svg"
+                alt="tasks-svg"
+              />
+              <a class="nav__item-link" href="">Tasks</a>
+            </li>
+
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/account-group.svg"
+                alt="communities-svg"
+              />
+              <a class="nav__item-link" href="">Communities</a>
+            </li>
+          </ul>
+
+          <ul class="nav__section">
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/cog.svg"
+                alt="settings-svg"
+              />
+              <a class="nav__item-link" href="">Settings</a>
+            </li>
+
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/face-agent.svg"
+                alt="support-svg"
+              />
+              <a class="nav__item-link" href="">Support</a>
+            </li>
+
+            <li class="nav__item">
+              <img
+                class="nav__item-icon white-filter"
+                src="./imgs/icons/shield-check.svg"
+                alt="privacy-svg"
+              />
+              <a class="nav__item-link" href="">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- NAVIGATION -->
+      <div class="nav">
+        <search class="nav__search search">
+          <label for="search">
+            <img
+              class="search__svg"
+              src="./imgs/icons/magnify.svg"
+              alt="magnify-svg"
+            />
+          </label>
+          <input class="search__input" type="search" id="search" />
+        </search>
+
+        <div class="nav__user user">
+          <img
+            class="user__svg"
+            src="./imgs/icons/bell-ring-outline.svg"
+            alt="bell-svg"
+          />
+
+          <img class="user__icon" src="./imgs/user_main.jpg" alt="user-main" />
+
+          <h3 class="user__name">George Cooper</h3>
+        </div>
+
+        <div class="nav__greet greet">
+          <img class="greet__icon" src="./imgs/user_main.jpg" alt="user-main" />
+          <div>
+            <p class="greet__sayhi">Hi there,</p>
+            <h2 class="greet__username">George Cooper (@georgii8)</h2>
+          </div>
+        </div>
+
+        <div class="nav__controls controls">
+          <button type="button" class="controls__btn">New</button
+          ><button type="button" class="controls__btn">Upload</button
+          ><button type="button" class="controls__btn">Share</button>
+        </div>
+      </div>
+
+      <article class="article"></article>
+    </main>
+  </body>
 </html>

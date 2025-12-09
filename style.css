@@ -1,0 +1,29 @@
+/* variables and the general container */
+:root {
+  font-size: 16px;
+  --cl-light-gray: #e0e0e0;
+  --cl-medium-gray: #b0b0b0;
+  --cl-soft-gray: #888888;
+  --cl-white: #ffffff;
+  --cl-electric-blue: #1e90ff;
+}
+
+/* Hide but keep for SR */
+.aria-invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) 5fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "sidebar header" "sidebar article";
+  height: 100vh;
+}
