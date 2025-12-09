@@ -22,7 +22,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: minmax(10rem, 1fr) 5fr;
+  grid-template-columns: minmax(14rem, 1fr) 5fr;
   grid-template-rows: 1fr 4fr;
   grid-template-areas: "sidebar header" "sidebar article";
   height: 100vh;

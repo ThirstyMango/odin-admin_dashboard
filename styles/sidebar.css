@@ -15,7 +15,6 @@
   justify-content: flex-start;
   position: relative;
   left: -0.5rem;
-  cursor: default;
 }
 
 .sidebar__header-logo {
@@ -41,8 +40,6 @@
 
 .nav__item {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 .nav__item-icon {
@@ -50,6 +47,10 @@
 }
 
 .nav__item-link {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  padding-right: 0.3rem;
   font-size: 1.1rem;
   font-weight: 600;
 }
