@@ -1,0 +1,26 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 22rem;
+  grid-template-rows: 1fr;
+  padding: 1rem 1.5rem;
+  background-color: var(--cl-light-gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-template-rows: 3rem;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+
+.grid__header {
+  grid-column: 1 / -1;
+}
+
+.grid__item {
+  background-color: var(--cl-white);
+  border-left: 0.5rem solid var(--cl-electric-orange);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
