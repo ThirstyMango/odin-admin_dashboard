@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="./styles/sidebar.css" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/nav.css" />
+    <style>
+      @font-face {
+        font-family: InterVariable;
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("./fonts/InterVariable.woff2") format("woff2");
+      }
+      body {
+        font-family: InterVariable Arial, Helvetica, sans-serif;
+      }
+    </style>
   </head>
-  <style>
-    @font-face {
-      font-family: InterVariable;
-      font-style: normal;
-      font-weight: 100 900;
-      font-display: swap;
-      src: url("./fonts/InterVariable.woff2") format("woff2");
-    }
-    body {
-      font-family: InterVariable Arial, Helvetica, sans-serif;
-    }
-  </style>
+
   <body>
     <main class="container">
       <!-- SIDEBAR -->
@@ -154,16 +155,20 @@
           <input class="search__input" type="search" id="search" />
         </search>
 
-        <div class="nav__user user">
+        <div class="nav__profile profile">
           <img
-            class="user__svg"
+            class="profile__svg"
             src="./imgs/icons/bell-ring-outline.svg"
             alt="bell-svg"
           />
 
-          <img class="user__icon" src="./imgs/user_main.jpg" alt="user-main" />
+          <img
+            class="profile__icon"
+            src="./imgs/user_main.jpg"
+            alt="user-main"
+          />
 
-          <h3 class="user__name">George Cooper</h3>
+          <h3 class="profile__name">George Cooper</h3>
         </div>
 
         <div class="nav__greet greet">
@@ -181,10 +186,9 @@
         </div>
       </div>
 
-      <article class="main">
+      <div class="main">
         <section class="grid">
           <h3 class="grid__header">Your Projects</h3>
-
           <div class="item">
             <h3 class="item__header">Recipes</h3>
             <p class="item__content">
@@ -192,7 +196,7 @@
               to train linking webpages together.
             </p>
             <div class="item__icons">
-              <a href="#">
+              <a href="https://github.com/ThirstyMango/odin-recipes">
                 <img
                   src="./imgs/icons/github.svg"
                   alt="github-svg"
@@ -208,7 +212,7 @@
                 />
               </a>
 
-              <a href="#">
+              <a href="https://thirstymango.github.io/odin-recipes/">
                 <img
                   src="./imgs/icons/open-in-new.svg"
                   alt="open-in-new-svg"
@@ -226,7 +230,7 @@
               dogs. Woof woof.
             </p>
             <div class="item__icons">
-              <a href="#">
+              <a href="https://github.com/ThirstyMango/odin-lading_page">
                 <img
                   src="./imgs/icons/github.svg"
                   alt="github-svg"
@@ -242,7 +246,7 @@
                 />
               </a>
 
-              <a href="#">
+              <a href="https://thirstymango.github.io/odin-landing_page/">
                 <img
                   src="./imgs/icons/open-in-new.svg"
                   alt="open-in-new-svg"
@@ -260,7 +264,9 @@
               in their free time.
             </p>
             <div class="item__icons">
-              <a href="#">
+              <a
+                href="https://github.com/ThirstyMango/odin-rock_paper_scissors"
+              >
                 <img
                   src="./imgs/icons/github.svg"
                   alt="github-svg"
@@ -276,7 +282,9 @@
                 />
               </a>
 
-              <a href="#">
+              <a
+                href="https://thirstymango.github.io/odin-rock_paper_scissors/"
+              >
                 <img
                   src="./imgs/icons/open-in-new.svg"
                   alt="open-in-new-svg"
@@ -294,7 +302,7 @@
               code structure.
             </p>
             <div class="item__icons">
-              <a href="#">
+              <a href="https://github.com/ThirstyMango/odin-etch_a_sketch">
                 <img
                   src="./imgs/icons/github.svg"
                   alt="github-svg"
@@ -310,7 +318,7 @@
                 />
               </a>
 
-              <a href="#">
+              <a href="https://thirstymango.github.io/odin-etch_a_sketch/">
                 <img
                   src="./imgs/icons/open-in-new.svg"
                   alt="open-in-new-svg"
@@ -328,7 +336,7 @@
               handle so many edge cases.
             </p>
             <div class="item__icons">
-              <a href="#">
+              <a href="https://github.com/ThirstyMango/odin-calculator">
                 <img
                   src="./imgs/icons/github.svg"
                   alt="github-svg"
@@ -344,7 +352,7 @@
                 />
               </a>
 
-              <a href="#">
+              <a href="https://thirstymango.github.io/odin-calculator/">
                 <img
                   src="./imgs/icons/open-in-new.svg"
                   alt="open-in-new-svg"
@@ -361,7 +369,7 @@
               accessibility.
             </p>
             <div class="item__icons">
-              <a href="#">
+              <a href="https://github.com/ThirstyMango/odin-sign_up_form">
                 <img
                   src="./imgs/icons/github.svg"
                   alt="github-svg"
@@ -377,7 +385,7 @@
                 />
               </a>
 
-              <a href="#">
+              <a href="https://thirstymango.github.io/odin-sign_up_form">
                 <img
                   src="./imgs/icons/open-in-new.svg"
                   alt="open-in-new-svg"
@@ -390,14 +398,71 @@
         <aside class="aside">
           <article class="article">
             <h3 class="article__header">Announcements</h3>
-            <div class="article__content"></div>
+            <div class="article__content article__content--info">
+              <div class="infobox">
+                <h3 class="infobox__header">Site Maintanance</h3>
+                <p class="infobox__content">
+                  Our website will be undergoing maintanance on 18/12/2025
+                  between 23:00-24:00.
+                </p>
+              </div>
+              <hr />
+              <div class="infobox">
+                <h3 class="infobox__header">New Feature</h3>
+                <p class="infobox__content">
+                  New community group project color labeling is now fully
+                  functional.
+                </p>
+              </div>
+              <hr />
+              <div class="infobox">
+                <h3 class="infobox__header">Updated Privacy Policy</h3>
+                <p class="infobox__content">
+                  With regulations of local authorities, we have updated our
+                  Privacy policy.
+                </p>
+              </div>
+            </div>
           </article>
           <article class="article">
-            <h3 class="article__header">Trending</h3>
-            <div class="article__content"></div>
+            <h3 class="article__header">Recently active</h3>
+            <div class="article__content article__content--user">
+              <div class="user">
+                <img
+                  src="./imgs/user_01.jpg"
+                  alt="user-01"
+                  class="user__icon"
+                />
+
+                <h4 class="user__name">@adam_li:</h4>
+                <p class="user__additional">14/12/2025 18:31</p>
+              </div>
+              <div class="user">
+                <img
+                  src="./imgs/user_02.jpg"
+                  alt="user-02"
+                  class="user__icon"
+                />
+
+                <h4 class="user__name">@omah_sheldon:</h4>
+                <p class="user__additional">13/12/2025 16:03</p>
+              </div>
+              <div class="user">
+                <img src="./imgs/user_3.jpg" alt="user-03" class="user__icon" />
+
+                <h4 class="user__name">@jess_tren:</h4>
+                <p class="user__additional">13/12/2025 16:02</p>
+              </div>
+              <div class="user">
+                <img src="./imgs/user_4.jpg" alt="user-04" class="user__icon" />
+
+                <h4 class="user__name">@albion_brave:</h4>
+                <p class="user__additional">12/12/2025 19:00</p>
+              </div>
+            </div>
           </article>
         </aside>
-      </article>
+      </div>
     </main>
   </body>
 </html>
